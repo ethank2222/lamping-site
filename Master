@@ -4,11 +4,11 @@
         <title></title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.jpg"/>
+            <img id="logo" src="logo5.png"/>
             <img id="usa-distributor" src="usa-distributor.jpg"/>
             <nav id="navbar">
                 <center>

@@ -5,6 +5,9 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
+p{
+    font-weight: 500;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -25,6 +28,10 @@ body{
     text-align: center;
     transition: .2s;
     cursor: pointer;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .link{
     transition: .2s;
@@ -260,6 +267,12 @@ tr > *{
         margin: unset;
         text-align: left;
     }
+    
+    #navbar div{
+        padding: 10px 0px;
+        margin: 0px 10px;
+        display: inline-block;
+    }
 }
 @media only screen and (max-width: 450px){
     #three-col-products .image-container, #three-col-products img{
@@ -278,4 +291,102 @@ tr > *{
         margin: auto;
         width: 100%;
     }
+}
+
+
+/*Contact Us Page*/
+#form-contact{
+    min-width: 350px;
+    display: block;
+    margin: 0px;
+    text-align: left;
+}
+#form-contact textarea, #form-contact button, #form-contact label, #form-contact input{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+#form-contact textarea, #form-contact input{
+    border: 1.5px solid grey;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+#form-contact textarea:focus, #form-contact input:focus{
+    border: 1.5px solid grey;
+    outline: none;
+}
+form{
+    background-color: #F8F8F8;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px 0px;
+}
+#form-div{
+    background-color: #578cba;
+    border-radius: 20px;
+    border: 1px solid #578cba;
+}
+#form-div > div > *{
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+#form-div > div {
+    padding: 30px;
+}
+#form-contact input{
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+#form-contact textarea{
+    resize: vertical;
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 10px;
+    height: 120px;
+}
+#form-contact > *{
+    margin: 0 10%;
+}
+.submit-button{
+    padding: 8px 24px;
+    background-color: #578cba;
+    border: none;
+    color: white;
+}
+.align-left{
+    text-align: left;
+}
+#form-image{
+    max-width: 400px;
+    width: 80%;
+}
+#form-paragraph{
+    max-width: 400px;
+    width: 80%;
+}
+#show-on-800{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    #form-left{
+        display: block;
+        width: fit-content;
+    }
+    #form-right{
+        display: block;
+        width:fit-content;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #form-paragraph{
+        width: 100%;
+    }
+    #form-image{
+        max-width: 400px;
+        width: 100%;
+    }
+    
 }
