@@ -28,6 +28,8 @@ body{
     text-align: center;
     transition: .2s;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 h3{
     font-size: 1.4rem;
@@ -110,7 +112,7 @@ h2{
     font-size: 1.8rem;
     text-align: center;
 }
-p, a, i, b{
+p, a, i, b, text{
     font-size: 1.5rem;
 }
 #tagline{
@@ -157,6 +159,9 @@ th{
     width: 33%;
     font-size: 1.6rem;
 }
+td > *{
+    font-size: 1.6rem;
+}
 td{
     font-size: 1.5rem;
 }
@@ -199,7 +204,10 @@ tr > *{
     display: inline-block;
     vertical-align: top;
 }
-@media only screen and (max-width: 860px){
+.logos > img{
+    padding: 15px 35px;
+}
+@media only screen and (max-width: 892px){
     #navbar div{
         margin: 0px 12px;
     }
@@ -207,6 +215,9 @@ tr > *{
 @media only screen and (max-width: 700px){
     .hide-on-700{
         display:block;
+    }
+    .show-on-700{
+        display: none!important;
     }
     #navbar div{
         margin: 0px 18px;
@@ -261,7 +272,7 @@ tr > *{
         margin: unset;
         float: right;
         text-align: unset;
-        margin: 5px 20px 5px 5px;
+        margin: 5px 20px 5px 15px;
     }
     #three-col-products .image-container{
         margin: unset;
@@ -388,5 +399,56 @@ form{
         max-width: 400px;
         width: 100%;
     }
-    
+    .contact-wrapper{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/*Products Page*/
+td input{
+    transition: .2s;
+}
+td input:hover{
+    filter:brightness(0.95);
+}
+.products-wrapper table th{
+    width: unset;
+}
+.table-border{
+    width:fit-content;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 4px #124483;
+}
+.products-wrapper table{
+    background-color: rgba(0,0,0,0.1);
+    border: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.products-wrapper tr:nth-child(even){
+    background-color: rgba(0,0,0,.1);
+}
+.products-wrapper td, .products-wrapper th{
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.save{
+    background-color: #FFFF00;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 800px){
+    .products-wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    tr > *{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
